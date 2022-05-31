@@ -29,11 +29,7 @@ public class Shuttel extends Nave{
         this.fuel = fuel;
         this.weight = weight;
     }
-    @Override
-    public void despegar(){
-        this.motor = true;
-        this.speed = 100;
-    }
+    
 
     public void separarse(){ // se refiere a cuando el la nave lanzadera se separa de la nave principal
         if(motor == false){
@@ -43,5 +39,13 @@ public class Shuttel extends Nave{
         }
         
     }
+
+    @Override
+    public void despegar(){
+        this.motor = true;
+        this.speed = 100;
+    }
+
+    
     
 }
