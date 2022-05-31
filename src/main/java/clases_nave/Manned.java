@@ -29,7 +29,8 @@ public class Manned extends Nave{
     
     @Override
     public void despegar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.speed = speed;
+        this.motor = true;
     }
     
 }

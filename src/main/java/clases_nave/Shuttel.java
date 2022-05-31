@@ -23,12 +23,14 @@ public class Shuttel extends Nave{
      * @param fuel tipo de combustible
      * @param weight peso
      */
+    
     public Shuttel (String country, String name, String fuel, float weight){
         this.country = country;
         this.name = name;
         this.fuel = fuel;
         this.weight = weight;
     }
+
     
 
     public void separarse(){ // se refiere a cuando el la nave lanzadera se separa de la nave principal

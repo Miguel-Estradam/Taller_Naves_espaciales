@@ -15,7 +15,7 @@ public abstract class Nave {
      * @param country Pais de creacion
      * @param name nombre de la nave
      
-     * @param weight Peso de la nave
+     * @param weight Peso de la nave toneladas
      * @param speed Velocidad al despegar
      * @param motor estado de los motores
      */
