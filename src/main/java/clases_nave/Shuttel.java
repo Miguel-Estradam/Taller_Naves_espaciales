@@ -33,6 +33,14 @@ public class Shuttel extends Nave{
 
     
 
+    
+
+    @Override
+    public void despegar(){
+        System.out.println("El cohete ha despegado de la Tierra !!!");
+        this.motor = true;
+        this.speed = 100;
+    }
     public void separarse(){ // se refiere a cuando el la nave lanzadera se separa de la nave principal
         if(motor == false){
             System.out.println("Iniciando separacion");
@@ -41,14 +49,6 @@ public class Shuttel extends Nave{
         }
         
     }
-
-    @Override
-    public void despegar(){
-        System.out.println("El cohete ha despegado de la Tierra !!!");
-        this.motor = true;
-        this.speed = 100;
-    }
-
     
     
 }

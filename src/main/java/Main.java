@@ -43,6 +43,7 @@ public class Main {
         String fuel;
         String destiny;
         String espacio = " ";
+        int detener = 0;
         
         Scanner sc = new Scanner(System.in);
         int opt=0,opp=10;
@@ -57,6 +58,7 @@ public class Main {
         if(opt == 1){
             
             System.out.println(" Nave lanzadera");
+            country = sc.nextLine();// me esta generando un erro y toca escribir doble vez
             System.out.println("Pais : ");
             country = sc.nextLine();
             System.out.println("Nombre : ");
@@ -66,12 +68,21 @@ public class Main {
             System.out.println("Peso en toneladas : ");
             weight = sc.nextFloat();
             
-            Nave crearNave = new Shuttel(country,name,fuel,weight);
+            Shuttel crearNave = new Shuttel(country,name,fuel,weight);
             
             
             System.out.println("\n Presiona Enter para despegar ");
             espacio = sc.nextLine();
+            espacio = sc.nextLine();
             crearNave.despegar();
+             System.out.println("\n El cohete ha salido de la tierra, Escribe 1 para apagar los motores  ");
+             detener = sc.nextInt();
+             if(detener == 1){
+                 crearNave.detenerse();
+             }
+             crearNave.separarse();
+            
+            espacio = sc.nextLine();
         }
         else if(opt ==2){}
         else if (opt == 3){}
