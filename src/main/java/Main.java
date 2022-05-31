@@ -65,8 +65,13 @@ public class Main {
             fuel = sc.nextLine();
             System.out.println("Peso en toneladas : ");
             weight = sc.nextFloat();
+            
+            Nave crearNave = new Shuttel(country,name,fuel,weight);
+            
+            
             System.out.println("\n Presiona Enter para despegar ");
             espacio = sc.nextLine();
+            crearNave.despegar();
         }
         else if(opt ==2){}
         else if (opt == 3){}

@@ -44,6 +44,7 @@ public class Shuttel extends Nave{
 
     @Override
     public void despegar(){
+        System.out.println("El cohete ha despegado de la Tierra !!!");
         this.motor = true;
         this.speed = 100;
     }
