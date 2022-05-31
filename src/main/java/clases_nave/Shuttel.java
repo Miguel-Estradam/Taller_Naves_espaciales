@@ -41,6 +41,9 @@ public class Shuttel extends Nave{
         this.motor = true;
         this.speed = 100;
     }
+    public void detenerse(){
+        System.out.println("Motores detenidos");
+    }
     public void separarse(){ // se refiere a cuando el la nave lanzadera se separa de la nave principal
         if(motor == false){
             System.out.println("Iniciando separacion");

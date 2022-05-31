@@ -10,9 +10,9 @@ public class Main {
     public static void main (String[] args){
          Scanner sc = new Scanner(System.in);
         Nave Cohete1 = new Shuttel("EEUU","RTK-32","nomal",21);
-        Nave Cohete2 = new Unmanned("EEUU","RTK-32",21);
-        Nave Cohete3 = new Shuttel("EEUU","RTK-32","nomal",21);
-        Nave Cohete4 = new Manned("EEUU","RTK-32",21,2);
+        Nave Cohete2 = new Unmanned("Rusia","Punik",14);
+        Nave Cohete3 = new Shuttel("EEUU","RTT","solida",13);
+        Nave Cohete4 = new Manned("Japon","FAS-2",25,4);
     
        
         
@@ -81,7 +81,8 @@ public class Main {
                  crearNave.detenerse();
              }
              crearNave.separarse();
-            
+             
+            espacio = sc.nextLine();
             espacio = sc.nextLine();
         }
         else if(opt ==2){}
